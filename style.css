@@ -1,0 +1,220 @@
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+nav {
+  opacity: 0.9;
+  border-radius: 20px;
+  position: sticky;
+  z-index: 20;
+  top: 20px;
+  align-items: center;
+  display: flex;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,224,232,1) 0%, rgba(255,255,255,1) 17%, rgba(255,255,255,1) 100%);  transition: all 0.2s ease-in-out;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.navBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.leftNav {
+  flex: 4
+}
+
+.rightNav {
+  flex: 1
+}
+
+.mainCardPreview {
+  margin-top: 20px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,224,232,1) 0%, rgba(255,255,255,1) 17%, rgba(255,255,255,1) 100%);  
+  border-radius: 20px;
+}
+
+.navBlock a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.fakeBtn {
+  background-color: #2D2727;
+  padding: 10%;
+  border-radius: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  color: white!important;
+}
+
+#fakeBtn:hover {
+  transform: translate(0, -10%);
+}
+
+#fakeBtn a {
+  color: white
+}
+
+
+
+nav:hover {
+  background-color: white;
+  opacity: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translate(0, -10%);
+}
+
+a:hover {
+  border-bottom: 1px white solid;
+  color: #ACADBC;
+  transform: translate(0, -10%);
+  transition: all 0.3s ease-in-out;
+}
+
+#logo {
+  width: 7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#logo:hover{
+  transform: translate(0, -10%);
+}
+
+li {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+li:hover{
+  transform: translate(0, -20%);
+
+}
+
+body {
+  font-family: monospace;
+  background-color: rgb(225, 220, 220);
+}
+
+.mainCardBody {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.mainCardPreview{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.mainCardPreview:hover {
+  transform: translate(0, -3%);
+}
+
+.mainCardSplit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainSplitText {
+  flex: 2;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainSplitButton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fakeBtnViewPlan {
+  background-color: #609966;
+  padding: 0!important;
+  height: 50%;
+  align-items: center;
+  display: flex;
+}
+
+.mainCardSplit img {
+  width: 35%!important;
+  height: auto!important;
+}
+
+#mainCTA {
+  flex-direction: row;
+  display: flex;
+  margin-top: 1em;
+}
+
+.mainCTACard {
+  margin-left: 1em;
+  margin-left: 1em;
+  background-color: black;
+  border-radius: 30px;
+  height: 10rem;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #609966;
+  color: white;
+}
+
+#mainCTA a{
+  border-bottom: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer {
+  flex-direction: row;
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-around;
+}
+
+footer a {
+  transition: transform 0.3s ease-in-out;
+  width: 30%;
+}
+
+footer a:hover{
+  color: black;
+  border-bottom: 0;
+
+}
+
+.footerCard {
+  align-items: center;
+  height: 20em;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: white;
+}
