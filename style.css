@@ -3,7 +3,7 @@ a {
   font-weight: bold;
 }
 
-ul {
+.navHead {
   list-style-type: none;
   flex-direction: row;
   display: flex;
@@ -99,13 +99,13 @@ a:hover {
   transform: translate(0, -10%);
 }
 
-li {
+.navHead li {
   color: white;
   font-size: 1.5rem;
   transition: transform 0.3s ease-in-out;
 }
 
-li:hover{
+.navHead li:hover{
   transform: translate(0, -20%);
 
 }
