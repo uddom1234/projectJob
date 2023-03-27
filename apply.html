@@ -5,8 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply</title>
+    <link href="apply.css" rel="stylesheet"/>
 </head>
 <body>
-    
+    <p class="head1">
+    <div class="head">
+        <h1>  Apply Now</h1>
+    </div>
+    </P>
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset class="main">
+            <legend></legend>
+       
+        <p>
+            <label for="reference"><input type="text" pattern="[A-Za-z0-9]{5}" required="required"/>Job Reference Number</label>
+        </P>
+        <fieldset class="personal">
+        <legend> Personal Details</legend>
+            <p>
+                <label><input type="text" maxlength="20" pattern="[A-Za-z]{1-20}"required="required"/> First name</label>
+                <label><input type="text" maxlength="20"pattern="[A-Za-z]{1-20}"required="required"/> Last name</label>
+            </p>
+            <p>
+                <label><input type="date" required="required"/> Date of Birth</label>
+            </p>
+            </fieldset>
+            <fieldset>
+            <legend>Gender</legend>
+                <p>
+                    <label><input type="radio" name="gender" required="required" Checked/>Male</label>
+                    <label><input type="radio" name="gender"/>Female</label>
+                    <label><input type="radio" name="gender"/>Other</label>
+                </p>
+            </fieldset>
+            <fieldset>
+            <legend> Address</legend>
+                <p>
+                    <label><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}" required="required"/>Street Address</label>
+                    <label><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}"/>Suburb/town</label>
+                    <label>State</label>
+                </p>
+                <p>
+                    <select>
+                        <option value="VIC" required="required">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">.WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                    <label><input type="text" pattern="[0-9]{4}" required="required"/>Postcode</label>
+                </p>
+            </fieldset>
+            <fieldset>
+            <legend>Contact Information</legend>
+                <p>
+                    <label><input type="text" placeholder="123456@gmail.com" required="required"/>Email Address</label>
+                </p>
+                <p>
+                    <label><input type="text" pattern="[ 0-9]{8-12}" required="required"/>Phone Number</label>
+                </p>
+            </fieldset>
+            <fieldset>
+            <legend>Skills</legend>
+                <p>
+                    <label><input type="checkbox" name="things[]"required="required" checked/>Bachelor Degree in IT Field</label>
+                    <label><input type="checkbox" name="things[]"/>Familiar with networking protocols</label>
+                    <label><input type="checkbox" name="things[]"/> Certification in IT or programming</label>
+                    <label><input type="checkbox" name="things[]"/> Fluency in English</label>
+                </p>
+                <p>
+                    <label>Other Skills</label>
+                    <textarea name="skills" placeholder="Write your other skills here"></textarea>
+                </p>
+            </fieldset>
+                <p>
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" value="Reset"/>
+                </p>
+        </fieldset>        
+    </form>
 </body>
 </html>
