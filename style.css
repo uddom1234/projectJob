@@ -218,3 +218,48 @@ footer a:hover{
   border-radius: 20px;
   background-color: white;
 }
+.head1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head{display: flex;
+ background-color:rgb(2,0,36);
+ color:white;
+ border-radius: 40px;
+ padding:2%;
+ justify-content: center;
+ width: 400px;
+ transition: all 0.3s ease-in-out;
+}
+body{
+  font-family: monospace;
+  background-color: white;
+}
+.main{
+  border-radius: 1%;
+  flex-direction: column;
+  display:flex;
+
+}
+.personal{
+  display:flex;
+  flex-grow: 1;
+  flex-direction:column;
+}
+fieldset:hover{
+  box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+  transform: all 0.3 ease-in-out;
+}
+
+.applyHeadContainer {
+ display: flex;
+ justify-content: center;
+}
+
+.reference:hover,.applyInput:hover {
+  transform: translate(0, 200%);
+  box-shadow: 4px 4px 4px #609966;
+
+}
