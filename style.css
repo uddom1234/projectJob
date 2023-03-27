@@ -222,16 +222,29 @@ footer a:hover{
 .grow {
   padding: 5px 5px 5px 5px;
   border-radius:10px;
-    height: 50px; 
-    width: 22%; 
+    height: 100px; 
+    width: 85%; 
     margin: 5px 1% 5px 1%; 
-    float: left; 
+    float: center; 
     position: relative; 
-    transition:height 0.5s; 
-    -webkit-transition:height 0.5s; 
+    transition:height 10s; 
+    -webkit-transition:height 10s; 
     text-align: center;
-
 }
 .grow:hover {
-    height: auto; /* This is the height on hover */
+  height: auto;
+  width: 500px;
 }
+
+.grow p,
+.grow ul {
+  display: none;
+}
+
+.grow:hover p, 
+.grow:hover ul {
+  display: block;
+}
+
+
+  
