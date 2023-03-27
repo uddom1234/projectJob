@@ -28,8 +28,14 @@
     flex-grow: 1;
     flex-direction:column;
  }
-fieldset :hover{
+fieldset:hover{
     background-color: :antiquewhite;
     box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-    transform: all 0.3 ease-in-out
+    transform: all 0.3 ease-in-out;
+}
+
+.applyInput {
+   display: flex;
+   justify-content: center;
+   translate (0,-10)
 }
