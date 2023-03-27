@@ -219,14 +219,8 @@ footer a:hover{
   background-color: white;
 }
 
-.head1{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.head{display: flex;
- background-color:rgb(2,0,36);
+.headApply{display: flex;
+ background-color:rgb(30, 84, 87);
  color:white;
  border-radius: 40px;
  padding:2%;
@@ -234,11 +228,15 @@ footer a:hover{
  width: 400px;
  transition: all 0.3s ease-in-out;
 }
+.bodyApply{
+  background-image:url(gradient.svg);
+
+}
 body{
   font-family: monospace;
   background-color: white;
 }
-.main{
+.mainForm{
   border-radius: 1%;
   flex-direction: column;
   display:flex;
@@ -250,20 +248,39 @@ body{
   flex-direction:column;
 }
 fieldset:hover{
-  box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
   transform: all 0.3 ease-in-out;
 }
-
+#checkInput{
+  border: 2px double #173827;
+  box-shadow: #0b0000;
+  border-radius: 2px;
+} 
+fieldset{
+  border: 2px double;
+  border-color:#2D2727;
+  border-radius: 20px;
+}
 .applyHeadContainer {
  display: flex;
  justify-content: center;
 }
-
-.reference:hover,.applyInput:hover {
-  transform: translate(0, 200%);
-  box-shadow: 4px 4px 4px #609966;
+.applyHeadContainer:hover{
+  transform: translate(0%, 4%);
 }
 
+.reference:hover,.applyInput:hover {
+  transform: translate(0, 5%);
+  box-shadow: 4px 4px 4px #2c442e;
+  background-color: #609966;
+}
+.applyInput:hover {
+  box-shadow: #2c442e;
+}
+body{
+  font-family: monospace;
+  font-size: large;
+}
 .grow {
   padding: 5px 5px 5px 5px;
   border-radius:10px;

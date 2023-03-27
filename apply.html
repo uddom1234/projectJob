@@ -7,16 +7,18 @@
     <title>Apply</title>
     <link href="style.css" rel="stylesheet"/>
 </head>
+
 <body>
-    <p class="head1">
-    <div class="applyHeadContainer">
-        <div class="head">
-            <h1>  Apply Now</h1>
+    <div class="bodyApply">
+        <p>
+        <div class="applyHeadContainer">
+            <div class="headApply">
+                <h1>  Apply Now</h1>
+            </div>
         </div>
-    </div>
-    </P>
+        </P>
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-        <fieldset class="main">
+        <fieldset class="mainForm">
             <legend></legend>
        
         <p>
@@ -73,10 +75,10 @@
             <fieldset>
             <legend>Skills</legend>
                 <p>
-                    <label class="applyInput"><input type="checkbox" name="things[]"required="required" checked/>Bachelor Degree in IT Field</label>
-                    <label class="applyInput"><input type="checkbox" name="things[]"/>Familiar with networking protocols</label>
-                    <label class="applyInput"><input type="checkbox" name="things[]"/> Certification in IT or programming</label>
-                    <label class="applyInput"><input type="checkbox" name="things[]"/> Fluency in English</label>
+                    <label id="checkInput" class="applyInput"><input type="checkbox" name="things[]"required="required" checked/>Bachelor Degree in IT Field</label>
+                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/>Familiar with networking protocols</label>
+                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/> Certification in IT or programming</label>
+                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/> Fluency in English</label>
                 </p>
                 <p>
                     <label class="applyInput">Other Skills</label>
@@ -89,5 +91,6 @@
                 </p>
         </fieldset>        
     </form>
+    </div>
 </body>
 </html>
