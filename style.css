@@ -218,6 +218,7 @@ footer a:hover{
   border-radius: 20px;
   background-color: white;
 }
+
 .head1{
   display:flex;
   justify-content: center;
@@ -261,5 +262,21 @@ fieldset:hover{
 .reference:hover,.applyInput:hover {
   transform: translate(0, 200%);
   box-shadow: 4px 4px 4px #609966;
+}
 
+.grow {
+  padding: 5px 5px 5px 5px;
+  border-radius:10px;
+    height: 50px; 
+    width: 22%; 
+    margin: 5px 1% 5px 1%; 
+    float: left; 
+    position: relative; 
+    transition:height 0.5s; 
+    -webkit-transition:height 0.5s; 
+    text-align: center;
+
+}
+.grow:hover {
+    height: auto; /* This is the height on hover */
 }
