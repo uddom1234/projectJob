@@ -269,16 +269,17 @@ fieldset:hover{
   border-radius:10px;
     height: 100px; 
     width: 85%; 
-    margin: 5px 1% 5px 1%; 
+    margin: 8px 1% 5px 1%; 
     float: center; 
     position: relative; 
     transition:height 10s; 
     -webkit-transition:height 10s; 
     text-align: center;
+    background-color: #609966;
 }
 .grow:hover {
   height: auto;
-  width: 500px;
+  width: 600px;
 }
 
 .grow p,
