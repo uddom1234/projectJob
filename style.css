@@ -263,9 +263,7 @@ fieldset{
  display: flex;
  justify-content: center;
 }
-.applyHeadContainer:hover{
-  transform: translate(0%, 4%);
-}
+
 
 .reference:hover,.applyInput:hover {
   transform: translate(0, 5%);
@@ -294,6 +292,7 @@ body{
 }
 .grow:hover {
     height: auto; /* This is the height on hover */
+    transform: all 0.3 ease-in-out;
 }
 
 /* Enhancement Main Card */
