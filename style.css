@@ -83,7 +83,6 @@ nav:hover {
 }
 
 a:hover {
-  color: #ACADBC;
   transform: translate(0, -10%);
   transition: all 0.3s ease-in-out;
 }
@@ -204,7 +203,6 @@ footer a {
 footer a:hover{
   color: black;
   border-bottom: 0;
-
 }
 
 .footerCard {
@@ -215,6 +213,7 @@ footer a:hover{
   justify-content: center;
   border-radius: 20px;
   background-color: white;
+  border: 1px solid black;
 }
 
 .headApply{display: flex;
@@ -278,17 +277,19 @@ body{
   font-size: large;
 }
 .grow {
+  transform: all 0.3 ease-in-out;
+
   padding: 5px 5px 5px 5px;
   border-radius:10px;
-    height: 100px; 
-    width: 85%; 
-    margin: 8px 1% 5px 1%; 
-    float: center; 
-    position: relative; 
-    transition:height 10s; 
-    -webkit-transition:height 10s; 
-    text-align: center;
-    background-color: #609966;
+  height: 100px; 
+  width: 85%; 
+  margin: 8px 1% 5px 1%; 
+  float: center; 
+  position: relative; 
+  transition:height 10s; 
+  -webkit-transition:height 10s; 
+  text-align: center;
+  background-color: #609966;
 }
 .grow:hover {
     height: auto; /* This is the height on hover */
