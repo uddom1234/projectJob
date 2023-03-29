@@ -9,14 +9,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-    <div class="bodyApply">
-        <p>
-        <div class="applyHeadContainer">
-            <div class="headApply">
-                <h1>  Apply Now</h1>
-            </div>
-=======
     <div class="mainCardPreview">
     <nav>
         <div class="leftNav navBlock">
@@ -38,52 +30,49 @@
                 </li>
             </ul>
             </div>
-        <div class="rightNav navBlock">
-            <a href="./apply.html" class="fakeBtn">
-                APPLY NOW
-            </a>
-        </div>
+
     </nav>
-    <p class="head1">
-    <div class="applyHeadContainer">
-        <div class="head">
-            <h1>  Apply Now</h1>
->>>>>>> 39185d16e34cfb8e19da582ace19c0eed3a47607
-        </div>
-        </P>
+    <section>
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset class="mainForm">
             <legend></legend>
        
         <p>
             <label class="reference"><input type="text" pattern="[A-Za-z0-9]{5}" required="required"/>Job Reference Number</label>
-        </P>
-        <fieldset class="personal">
-        <legend> Personal Details</legend>
-            <p>
-                <label class="applyInput"><input type="text" maxlength="20" pattern="[A-Za-z]{1-20}"required="required"/> First name</label>
+        </P><hr/>
+        <fieldset class="personalContainer">
+    
+        <h3 class="applyH3">Personal Details</h3>
+        
+            <div class="personalDet">
+                <p class="name">
+                <label  class="applyInput"><input type="text" maxlength="20" pattern="[A-Za-z]{1-20}"required="required"/> First name&nbsp;&nbsp;&nbsp;</label>
                 <label class="applyInput"><input type="text" maxlength="20"pattern="[A-Za-z]{1-20}"required="required"/> Last name</label>
-            </p>
-            <p>
-                <label class="applyInput"><input type="date" required="required"/> Date of Birth</label>
-            </p>
-            </fieldset>
-            <fieldset>
-            <legend>Gender</legend>
+                </p>
+             </div>
+             <div>
+            <p class="dob">
+                <label class="applyInput"><input type="date" required="required"/>&nbsp;&nbsp;&nbsp;&nbsp; Date of Birth</label>
+            </p><hr/>
+            </div>
+            
+            </fieldset><hr/>
+            <fieldset class="applyGender">
+            <h3 class="applyH3">Gender</h3>
                 <p>
                     <label class="applyInput" ><input type="radio" name="gender" required="required" Checked/>Male</label>
                     <label class="applyInput"><input type="radio" name="gender"/>Female</label>
                     <label class="applyInput"><input type="radio" name="gender"/>Other</label>
                 </p>
-            </fieldset>
-            <fieldset>
-            <legend> Address</legend>
+            </fieldset><hr/>
+            <fieldset class="applyAddress">
+            <h3 class="applyH3">Address</h3>
+    
                 <p>
-                    <label class="applyInput"><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}" required="required"/>Street Address</label>
-                    <label class="applyInput"><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}"/>Suburb/town</label>
+                    <label id="stateAddress" class="applyInput"><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}" required="required"/>Street Address&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label class="applyInput"><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}"/>Suburb/Town&nbsp;&nbsp;&nbsp;&nbsp;</label><hr/>
                     <label class="applyInput">State</label>
-                </p>
-                <p>
+                               
                     <select>
                         <option value="VIC" required="required">VIC</option>
                         <option value="NSW">NSW</option>
@@ -94,37 +83,39 @@
                         <option value="TAS">TAS</option>
                         <option value="ACT">ACT</option>
                     </select>
-                    <label class="applyInput" ><input type="text" pattern="[0-9]{4}" required="required"/>Postcode</label>
+                    <label class="applyInput" ><input type="text" pattern="[0-9]{4}" required="required"/>&nbsp;&nbsp;&nbsp;&nbsp;Postcode</label>
                 </p>
-            </fieldset>
-            <fieldset>
-            <legend>Contact Information</legend>
+                
+            </fieldset><hr/>
+            <fieldset class="contactInfo">
+             <h3 class="applyH3">Contact Information</h3>
                 <p>
                     <label class="applyInput"><input type="text" placeholder="123456@gmail.com" required="required"/>Email Address</label>
                 </p>
                 <p>
                     <label class="applyInput"><input type="text" pattern="[ 0-9]{8-12}" required="required"/>Phone Number</label>
                 </p>
-            </fieldset>
-            <fieldset>
-            <legend>Skills</legend>
+            </fieldset><hr/>
+            <fieldset class="skills">
+            <h3 class="applyH3">Skills</h3>
                 <p>
-                    <label id="checkInput" class="applyInput"><input type="checkbox" name="things[]"required="required" checked/>Bachelor Degree in IT Field</label>
-                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/>Familiar with networking protocols</label>
-                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/> Certification in IT or programming</label>
-                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/> Fluency in English</label>
+                    <label id="checkInput" class="applyInput"><input type="checkbox" name="things[]"required="required" checked/>Bachelor Degree in IT Field</label><hr/>
+                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/>Familiar with networking protocols</label><hr/>
+                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/> Certification in IT or programming</label><hr/>
+                    <label id="checkInput"  class="applyInput"><input type="checkbox" name="things[]"/> Fluency in English</label><hr/>
                 </p>
                 <p>
                     <label class="applyInput">Other Skills</label>
                     <textarea class="applyInput" name="skills" placeholder="Write your other skills here"></textarea>
                 </p>
-            </fieldset>
+            </fieldset><hr/>
                 <p>
                     <input class="applyInput" type="submit" value="Submit"/>
                     <input class="applyInput" type="reset" value="Reset"/>
                 </p>
         </fieldset>        
     </form>
+</section>
     </div>
 </body>
 </html>

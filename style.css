@@ -228,55 +228,105 @@ footer a:hover{
  width: 400px;
  transition: all 0.3s ease-in-out;
 }
-.bodyApply{
-  background-image:url(gradient.svg);
-
-}
 body{
   font-family: monospace;
   background-color: white;
 }
+
+#stateAddress{
+  justify-content: flex-start;
+}
+
 .mainForm{
   border-radius: 1%;
   flex-direction: column;
   display:flex;
-
+  background-color: white;
+  background-image:linear-gradient(to right, #75b572, rgb(255, 255, 255));
+  width: 1000px;
+  
 }
-.personal{
+form{
+  display:inline-block;
+  margin-left: 250px;
+}
+.applyH3:hover{
+  background-color: #4e6a50;
+  box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  border:40px  #0b0000;
+  color:aliceblue;
+}
+.applyH3{
+  border-radius: 30px;
+  width: 200px;
+  background-color: #639267;
+  text-align: center;
+}
+.personalContainer{
   display:flex;
   flex-grow: 1;
   flex-direction:column;
+  background-color: rgb(255, 255, 255);
+}
+
+section{
+  background-image:linear-gradient(to bottom right, black, rgb(12, 112, 65), black);
+}
+input[type=text]:focus{
+  background-image:linear-gradient(to right, rgb(182, 207, 182), white);
+  border: 4px double black;
+}
+.reference, .applyGender,.applyAddress, .contactInfo,.skills{
+  background-color: rgb(255, 255, 255);
+}
+
+input[type=submit],[type=reset]{
+  background-color: #62ab68;
+  color:#0b0000 ;
+  box-shadow: #173827;
+  margin: 4px 4px;
+  font-weight: bold;
+  float: right;
+  width:200px;
+  height: 40px;
+  border-bottom: 4px double #9ca7a2;
+  border-radius:20px ;
 }
 fieldset:hover{
-  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+  box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
   transform: all 0.3 ease-in-out;
 }
+.personalContainer,.applyGender, .applyAddress,.contactInfo,.skills{
+  box-shadow: 20px 10px 30px 10px rgba(59, 134, 74, 0.348) inset ;
+}
+
 #checkInput{
   border: 2px double #173827;
   box-shadow: #0b0000;
-  border-radius: 2px;
+  border-radius: 20px;
+  box-sizing: content-box;
 } 
 fieldset{
-  border: 2px double;
-  border-color:#2D2727;
+  border-top: 3px double black;
+  border-left: 3px double black;
   border-radius: 20px;
 }
-.applyHeadContainer {
- display: flex;
- justify-content: center;
-}
-.applyHeadContainer:hover{
-  transform: translate(0%, 4%);
-}
-
 .reference:hover,.applyInput:hover {
   transform: translate(0, 5%);
   box-shadow: 4px 4px 4px #2c442e;
   background-color: #609966;
 }
-.applyInput:hover {
-  box-shadow: #2c442e;
+textarea{
+  border-radius: 5px;
+  border: 2px double black;
 }
+
+select{
+  border-radius: 4px;
+  }
 body{
   font-family: monospace;
   font-size: large;
