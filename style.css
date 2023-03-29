@@ -3,6 +3,7 @@ a {
   font-weight: bold;
 }
 
+
 .navHead {
   list-style-type: none;
   flex-direction: row;
@@ -74,8 +75,6 @@ nav {
   color: white
 }
 
-
-
 nav:hover {
   background-color: white;
   opacity: 1;
@@ -84,8 +83,6 @@ nav:hover {
 }
 
 a:hover {
-  border-bottom: 1px white solid;
-  color: #ACADBC;
   transform: translate(0, -10%);
   transition: all 0.3s ease-in-out;
 }
@@ -206,7 +203,6 @@ footer a {
 footer a:hover{
   color: black;
   border-bottom: 0;
-
 }
 
 .footerCard {
@@ -217,6 +213,7 @@ footer a:hover{
   justify-content: center;
   border-radius: 20px;
   background-color: white;
+  border: 1px solid black;
 }
 
 .headApply{display: flex;
@@ -314,6 +311,14 @@ fieldset{
   border-left: 3px double black;
   border-radius: 20px;
 }
+
+.applyHeadContainer {
+ display: flex;
+ justify-content: center;
+}
+
+
+
 .reference:hover,.applyInput:hover {
   transform: translate(0, 5%);
   box-shadow: 4px 4px 4px #2c442e;
@@ -332,22 +337,95 @@ body{
   font-size: large;
 }
 .grow {
+  transform: all 0.3 ease-in-out;
+
   padding: 5px 5px 5px 5px;
   border-radius:10px;
-    height: 100px; 
-    width: 85%; 
-    margin: 8px 1% 5px 1%; 
-    float: center; 
-    position: relative; 
-    transition:height 10s; 
-    -webkit-transition:height 10s; 
-    text-align: center;
-    background-color: #609966;
+  height: 100px; 
+  width: 85%; 
+  margin: 8px 1% 5px 1%; 
+  float: center; 
+  position: relative; 
+  transition:height 10s; 
+  -webkit-transition:height 10s; 
+  text-align: center;
+  background-color: #609966;
 }
 .grow:hover {
-  height: auto;
-  width: 600px;
+    height: auto; /* This is the height on hover */
+    transform: all 0.3 ease-in-out;
 }
+
+/* Enhancement Main Card */
+
+#enhancementMainSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#enhancementBackground {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  width: 20rem;
+}
+
+.enchancementMainCard ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+  height: 20rem
+}
+
+.enchancementMainCard li {
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #2a2a2a, #1e1e1e);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enchancementMainCard li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.enchancementMainCard li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.enchancementMainCard li:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
 
 .grow p,
 .grow ul {
@@ -358,6 +436,3 @@ body{
 .grow:hover ul {
   display: block;
 }
-
-
-  
