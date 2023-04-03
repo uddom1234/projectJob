@@ -280,3 +280,53 @@ fieldset:hover{
 .grow:hover {
     height: auto; /* This is the height on hover */
 }
+fieldset{
+  width : 90%
+}
+
+.aboutBody{
+  background-color: white
+}
+.ok{ 
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.team table{
+  width: 100%;
+  border: none;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+#ok {
+  list-style: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.ok1 {
+  float: left;
+}
+#ok1 {
+  clear: both;
+  float: left;
+}
