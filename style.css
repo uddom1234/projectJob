@@ -269,9 +269,7 @@ body{
   background-color: rgb(255, 255, 255);
 }
 
-section{
-  background-image:linear-gradient(to bottom right, black, #609966, black);
-}
+
 input[type=text]:focus{
   background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
   border: 4px double black;
