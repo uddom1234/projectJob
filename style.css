@@ -1,3 +1,58 @@
+@media screen and (max-width: 800px) {
+  .navHead li {
+    font-size: 20px!important;
+    padding: 10px;  
+  }
+  .fakeBtn {
+    width: 50px!important;
+    font-size: 10px!important;
+  }
+  #logo {
+    display: none!important;
+  }
+  .mainCardBody {
+    align-items: center!important;
+    justify-content: center!important;
+    text-align: center;
+  }
+  #mainSplitButton a {
+    width: 300px!important;
+    font-size: 20px!important;
+  }
+  #mainSplitButton {
+    display: flex;
+    justify-content: center;
+  }
+  .mainCardImage {
+    display: none!important;
+  }
+
+  .mainCTACard h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  .mainCTACard p{
+    font-size: 12px;
+    text-align: center;
+  }
+  .mainCTACard {
+    padding: 2px!important;
+  }
+  .footerCard {
+    height: 100px!important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+  }
+  .mainForm {
+    width: 400px!important;
+
+  }
+
+  
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -11,6 +66,14 @@ a {
   justify-content: space-around;
   flex: 1;
 }
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .mainForm {
+    width: 500px!important;
+
+  }
+}
+
 
 nav {
   opacity: 0.9;
@@ -65,6 +128,8 @@ nav {
   justify-content: center;
   transition: all 0.3s ease-in-out;
   color: white!important;
+  align-items: center;
+  text-align: center;
 }
 
 #fakeBtn:hover {
@@ -144,10 +209,11 @@ body {
   flex-direction: column;
 }
 
-#mainSplitButton {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+#mainSplitButton a {  
+  width: 500px;
+  font-size: 30px;
+  padding: 20px;
+  height: 50px;
 }
 
 .fakeBtnViewPlan {
@@ -159,8 +225,8 @@ body {
 }
 
 .mainCardSplit img {
-  width: 35%!important;
-  height: auto!important;
+  width: 35%;
+  height: auto;
 }
 
 #mainCTA {
@@ -237,7 +303,10 @@ body{
 }
 .mainForm{
   display:inline-block;
+<<<<<<< HEAD
   margin-left: 250px;
+=======
+>>>>>>> c8f06c638c2b90392fd11dfdb192e743f9a1f166
 }
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
@@ -421,6 +490,11 @@ body{
   transform: translateY(-50%);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .grow p,
 .grow ul {
