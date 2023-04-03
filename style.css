@@ -216,15 +216,7 @@ footer a:hover{
   border: 1px solid black;
 }
 
-.headApply{display: flex;
- background-color:rgb(30, 84, 87);
- color:white;
- border-radius: 40px;
- padding:2%;
- justify-content: center;
- width: 400px;
- transition: all 0.3s ease-in-out;
-}
+
 body{
   font-family: monospace;
   background-color: white;
@@ -241,7 +233,7 @@ body{
   background-color: white;
   background-image:linear-gradient(to right, #83b183, rgb(255, 255, 255));
   width: 1000px;
-  
+  opacity:0.9;
 }
 .mainForm{
   display:inline-block;
@@ -276,8 +268,12 @@ input[type=text]:focus{
   background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
   border: 4px double black;
 }
-.reference, .applyGender,.applyAddress, .contactInfo,.skills{
+.personalContainer:hover,.reference, .applyGender,.applyAddress, .contactInfo,.skills{
   background-color: rgb(255, 255, 255);
+  transition: transform 0.5s ease-in-out ;
+}
+.personalContainer:hover,.reference:hover, .applyGender:hover,.applyAddress:hover, .contactInfo:hover,.skills:hover {
+  transform: translate(0,-10%);
 }
 
 input[type=submit],[type=reset]{
@@ -294,7 +290,13 @@ input[type=submit],[type=reset]{
 }
 fieldset:hover{
   box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
-  transform: all 0.3 ease-in-out;
+  
+}
+fieldset{
+  border-top: 3px double black;
+  border-left: 3px double black;
+  border-radius: 20px;
+  
 }
 .personalContainer,.applyGender, .applyAddress,.contactInfo,.skills{
   box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
@@ -306,11 +308,7 @@ fieldset:hover{
   border-radius: 20px;
   box-sizing: content-box;
 } 
-fieldset{
-  border-top: 3px double black;
-  border-left: 3px double black;
-  border-radius: 20px;
-}
+
 
 .applyHeadContainer {
  display: flex;
