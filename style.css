@@ -297,16 +297,13 @@ body{
   flex-direction: column;
   display:flex;
   background-color: white;
-  background-image:linear-gradient(to right, #aae3aa, rgb(0, 0, 0));
+  background-image:linear-gradient(to right, #9cc79c, rgb(198, 214, 204));
   width: 1000px;
   opacity:0.9;
 }
 .mainForm{
   display:inline-block;
-<<<<<<< HEAD
   margin-left: 250px;
-=======
->>>>>>> c8f06c638c2b90392fd11dfdb192e743f9a1f166
 }
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
