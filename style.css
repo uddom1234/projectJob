@@ -337,8 +337,7 @@ body{
   font-size: large;
 }
 .grow {
-  transform: all 0.3 ease-in-out;
-
+  transform: all 1.0 ease-in-out;
   padding: 5px 5px 5px 5px;
   border-radius:10px;
   height: 100px; 
@@ -353,7 +352,7 @@ body{
 }
 .grow:hover {
     height: auto; /* This is the height on hover */
-    transform: all 0.3 ease-in-out;
+    transform: all 1.0 ease-in-out;
 }
 
 /* Enhancement Main Card */
