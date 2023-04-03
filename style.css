@@ -297,12 +297,13 @@ body{
   flex-direction: column;
   display:flex;
   background-color: white;
-  background-image:linear-gradient(to right, #83b183, rgb(255, 255, 255));
+  background-image:linear-gradient(to right, #9cc79c, rgb(198, 214, 204));
   width: 1000px;
   opacity:0.9;
 }
 .mainForm{
   display:inline-block;
+  margin-left: 250px;
 }
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
@@ -500,4 +501,55 @@ form {
 .grow:hover p, 
 .grow:hover ul {
   display: block;
+}
+
+
+fieldset{
+  width : 90%
+}
+.aboutBody{
+  background-color: white
+}
+.ok{ 
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.team table{
+  width: 100%;
+  border: none;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+#ok {
+  list-style: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.ok1 {
+  float: left;
+}
+#ok1 {
+  clear: both;
+  float: left;
 }
