@@ -239,15 +239,15 @@ body{
   flex-direction: column;
   display:flex;
   background-color: white;
-  background-image:linear-gradient(to right, #75b572, rgb(255, 255, 255));
+  background-image:linear-gradient(to right, #83b183, rgb(255, 255, 255));
   width: 1000px;
   
 }
-form{
+.mainForm{
   display:inline-block;
-  margin-left: 250px;
+  margin-left: 190px;
 }
-.applyH3:hover{
+.applyH3:hover,.reference:hover{
   background-color: #4e6a50;
   box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.1);
   width: 220px;
@@ -256,7 +256,7 @@ form{
   border:40px  #0b0000;
   color:aliceblue;
 }
-.applyH3{
+.applyH3,.reference{
   border-radius: 30px;
   width: 200px;
   background-color: #639267;
@@ -270,10 +270,10 @@ form{
 }
 
 section{
-  background-image:linear-gradient(to bottom right, black, rgb(12, 112, 65), black);
+  background-image:linear-gradient(to bottom right, black, #609966, black);
 }
 input[type=text]:focus{
-  background-image:linear-gradient(to right, rgb(182, 207, 182), white);
+  background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
   border: 4px double black;
 }
 .reference, .applyGender,.applyAddress, .contactInfo,.skills{
@@ -297,7 +297,7 @@ fieldset:hover{
   transform: all 0.3 ease-in-out;
 }
 .personalContainer,.applyGender, .applyAddress,.contactInfo,.skills{
-  box-shadow: 20px 10px 30px 10px rgba(59, 134, 74, 0.348) inset ;
+  box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
 }
 
 #checkInput{
