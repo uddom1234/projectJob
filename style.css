@@ -247,6 +247,7 @@ body {
   height: 10rem;
   padding-left: 1em;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   background-color: #609966;
@@ -258,11 +259,18 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-footer {
+#footerDiv {
   flex-direction: row;
   display: flex;
   margin-top: 1em;
   justify-content: space-around;
+  width: 100%
+}
+footer {
+  flex-direction: column;
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
 }
 
 footer a {
