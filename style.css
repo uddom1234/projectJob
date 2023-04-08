@@ -300,11 +300,16 @@ body{
   background-image:linear-gradient(to right, #9cc79c, rgb(198, 214, 204));
   width: 1000px;
   opacity:0.9;
+  justify-content: center;
+  align-items: center;
 }
-.mainForm{
-  display:inline-block;
-  margin-left: 250px;
+.formCard{
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
 }
+
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
   box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.1);
@@ -327,19 +332,22 @@ body{
   background-color: rgb(255, 255, 255);
 }
 
-
-input[type=text]:focus{
-  background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
-  border: 4px double black;
-}
-.personalContainer:hover,.reference, .applyGender,.applyAddress, .contactInfo,.skills{
+.personalContainer,.reference, .applyGender,.applyAddress, .contactInfo,.skills{
   background-color: rgb(255, 255, 255);
   transition: transform 0.5s ease-in-out ;
+  box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
+  
 }
 .personalContainer:hover,.reference:hover, .applyGender:hover,.applyAddress:hover, .contactInfo:hover,.skills:hover {
   transform: translate(0,-10%);
 }
-
+fieldset:hover{
+  box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
+}
+input[type=text]:focus{
+  background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
+  border: 4px double black;
+}
 input[type=submit],[type=reset]{
   background-color: #62ab68;
   color:#0b0000 ;
@@ -352,19 +360,14 @@ input[type=submit],[type=reset]{
   border-bottom: 4px double #9ca7a2;
   border-radius:20px ;
 }
-fieldset:hover{
-  box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
-  
-}
+
 fieldset{
   border-top: 3px double black;
   border-left: 3px double black;
   border-radius: 20px;
   
 }
-.personalContainer,.applyGender, .applyAddress,.contactInfo,.skills{
-  box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
-}
+
 
 #checkInput{
   border: 2px double #173827;

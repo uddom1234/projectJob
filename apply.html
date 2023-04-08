@@ -34,22 +34,22 @@
 
     </div>
 
-    <section class= "formCard" style="margin-top: 10px;">
+    <section class= "formCard" >
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
             <fieldset class="mainForm">
                 <legend></legend>
+                <p>
              <h3 class="applyH3">Job Reference</h3>   
-            <p>
-                <label class="reference"><input type="text" pattern="[A-Za-z0-9]{5}" required="required"/></label>
-            </P><hr/>
-            <fieldset class="personalContainer">
-        
-            <h3 class="applyH3">Personal Details</h3>
             
-                <div class="personalDet">
+                <label class="reference"><input type="text" pattern="[A-Za-z0-9]{5}" placeholder="Enter reference ID" required="required"/></label>
+            </P><hr/>
+
+            <fieldset class="personalContainer">
+                <h3 class="applyH3">Personal Details</h3>
+                  <div class="personalDet">
                     <p class="name">
-                    <label  class="applyInput"><input type="text" maxlength="20" pattern="[A-Za-z]{1-20}"required="required"/> First name&nbsp;&nbsp;&nbsp;</label>
-                    <label class="applyInput"><input type="text" maxlength="20"pattern="[A-Za-z]{1-20}"required="required"/> Last name</label>
+                    <label  class="applyInput"><input type="text" maxlength="20" pattern="[A-Za-z]{1-20}" placeholder="Please enter your first name" required="required"/> First name&nbsp;&nbsp;&nbsp;</label>
+                    <label class="applyInput"><input type="text" maxlength="20"pattern="[A-Za-z]{1-20}"placeholder="Please enter your last name" required="required"/> Last name</label>
                     </p>
                  </div>
                  <div>
@@ -71,8 +71,8 @@
                 <h3 class="applyH3">Address</h3>
         
                     <p>
-                        <label id="stateAddress" class="applyInput"><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}" required="required"/>Street Address&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <label class="applyInput"><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}"/>Suburb/Town&nbsp;&nbsp;&nbsp;&nbsp;</label><hr/>
+                        <label id="stateAddress" class="applyInput"><input type="text" maxlength="40" pattern="[A-za-z0-9]{1-40}" placeholder="Enter your street address" required="required"/>Street Address&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <label class="applyInput"><input type="text" maxlength="40" placeholder="Enter your suburb" pattern="[A-za-z0-9]{1-40}"/>Suburb/Town&nbsp;&nbsp;&nbsp;&nbsp;</label><hr/>
                         <label class="applyInput">State</label>
                                    
                         <select>
@@ -85,7 +85,7 @@
                             <option value="TAS">TAS</option>
                             <option value="ACT">ACT</option>
                         </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;<label class="applyInput" ><input type="text" pattern="[0-9]{4}" required="required"/>Postcode</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<label class="applyInput" ><input type="text" placeholder="Enter your postcode" pattern="[0-9]{4}" required="required"/>Postcode</label>
                     </p>
                     
                 </fieldset><hr/>
@@ -95,7 +95,7 @@
                         <label class="applyInput"><input type="text" placeholder="123456@gmail.com" required="required"/>Email Address</label>
                     </p>
                     <p>
-                        <label class="applyInput"><input type="text" pattern="[ 0-9]{8-12}" required="required"/>Phone Number</label>
+                        <label class="applyInput"><input type="text" pattern="[ 0-9]{8-12}" placeholder="0123456789" required="required"/>Phone Number</label>
                     </p>
                 </fieldset><hr/>
                 <fieldset class="skills">
