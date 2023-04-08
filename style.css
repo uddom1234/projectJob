@@ -1,4 +1,9 @@
+/* this here will override most default css when the width of the device screen hits 800px */
 @media screen and (max-width: 800px) {
+  .image-container {
+    width: 200px;
+    height: 150px;
+  }
   .navHead li {
     font-size: 20px!important;
     padding: 10px;  
@@ -70,11 +75,13 @@ a {
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .mainForm {
     width: 500px!important;
-
   }
 }
 
-
+/* makes the navigation bar sticky and less opacity. meaning when you scroll down, the bar stays at the position */
+/* makes it on top of everything with z-index */
+/* uses flex to adjust the children li for nav with space-evenly */
+/* have a gradient color */
 nav {
   opacity: 0.9;
   border-radius: 20px;
@@ -91,6 +98,7 @@ nav {
   flex: 1;
 }
 
+/* broke the div for navBlock into two to space it out properly*/
 .navBlock {
   display: flex;
   flex-direction: row;
@@ -98,6 +106,7 @@ nav {
   justify-content: space-around;
 }
 
+/* within the nav, i wanted to set the flex of the children divs for responsive design */
 .leftNav {
   flex: 4
 }
@@ -106,6 +115,7 @@ nav {
   flex: 1
 }
 
+/* div for the main card nested within the nav*/
 .mainCardPreview {
   margin-top: 20px;
   background: rgb(2,0,36);
@@ -113,12 +123,14 @@ nav {
   border-radius: 20px;
 }
 
+/* remove the bullet points for the navigation */
 .navBlock a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
+/* made a makeshift button that links to other pages */
 .fakeBtn {
   background-color: #2D2727;
   padding: 10%;
@@ -132,6 +144,7 @@ nav {
   text-align: center;
 }
 
+/* makes the button move up when you hover */
 #fakeBtn:hover {
   transform: translate(0, -10%);
 }
@@ -140,6 +153,7 @@ nav {
   color: white
 }
 
+/* makes the nav bar move up when you hover and adds shadows */
 nav:hover {
   background-color: white;
   opacity: 1;
@@ -149,9 +163,9 @@ nav:hover {
 
 a:hover {
   transform: translate(0, -10%);
-  transition: all 0.3s ease-in-out;
 }
 
+/* ye logo that we designed ourself */
 #logo {
   width: 7rem;
   transition: all 0.3s ease-in-out;
@@ -167,11 +181,12 @@ a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+/* moves each nav linker up when hovered to let the user know that they can click it */
 .navHead li:hover{
   transform: translate(0, -20%);
-
 }
 
+/* add the default font to monospace */
 body {
   font-family: monospace;
   background-color: rgb(225, 220, 220);
@@ -184,6 +199,7 @@ body {
   padding: 1em;
 }
 
+/* this is the parent div for holding the navigation and main card */
 .mainCardPreview{
   display: flex;
   flex-direction: column;
@@ -202,6 +218,8 @@ body {
   flex-direction: column;
 }
 
+/* so in the card, i split it into two, one for image, and one for putting all the texts
+this is decorating and adjust the texts to the right place */
 #mainSplitText {
   flex: 2;
   justify-content: center;
@@ -216,6 +234,7 @@ body {
   height: 50px;
 }
 
+/* making another button that takes you to apply page */
 .fakeBtnViewPlan {
   background-color: #609966;
   padding: 0!important;
@@ -224,17 +243,20 @@ body {
   display: flex;
 }
 
+/* setting the size of the image to be 35% of div */
 .mainCardSplit img {
   width: 35%;
   height: auto;
 }
 
+/* adding margins and making the display flex for the section */
 #mainCTA {
   flex-direction: row;
   display: flex;
   margin-top: 1em;
 }
 
+/* have a class for the cards the cta sections and decorate it with margins, border radius, and more */
 .mainCTACard {
   margin-left: 1em;
   margin-left: 1em;
@@ -243,6 +265,7 @@ body {
   height: 10rem;
   padding-left: 1em;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   background-color: #609966;
@@ -254,11 +277,22 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-footer {
+/* making the 3 cards in a row by adjusting the parent div */
+#footerDiv {
   flex-direction: row;
   display: flex;
   margin-top: 1em;
   justify-content: space-around;
+  width: 100%
+}
+
+/* so there are two divs, one for h1, and one for the cards
+i want it to be column and centered */
+footer {
+  flex-direction: column;
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
 }
 
 footer a {
@@ -308,7 +342,7 @@ body{
   align-items: center;
   margin-top: 10px;
 
-}
+
 
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
@@ -415,6 +449,10 @@ body{
   text-align: center;
   background-color: #609966;
 }
+
+.grow ul {
+  padding: 10px!important;
+}
 .grow:hover {
     height: auto; /* This is the height on hover */
     transform: all 1.0 ease-in-out;
@@ -494,6 +532,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .grow p,
@@ -555,4 +594,62 @@ ul {
 #ok1 {
   clear: both;
   float: left;
+}
+
+.aboutUs-image-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.aboutUs-image-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+/* image zooms in */
+.aboutUs-image-container:hover img {
+  transform: scale(1.2);
+}
+
+/* when we hover over the image, an overlay pops up. the position, top, left, and transform is for centering it */
+/* it starts with opacity 0 making it not show */
+.image-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(96, 153, 102, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* display the overlay when the image is hovered */
+.aboutUs-image-container:hover .image-hover {
+  opacity: 1;
+}
+
+/* decorate the overlay texts and centering it. gets rid of predefined margin and padding */
+.image-hover h2 {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.image-hover p {
+  font-size: 16px;
+}
+
+/* aligns the div in the center: image, texts, and more */
+#aboutUsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
