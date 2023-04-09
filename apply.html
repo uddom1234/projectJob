@@ -43,22 +43,25 @@
             
                 <label class="reference"><input type="text" pattern="[A-Za-z0-9]{5}" placeholder="Enter reference ID" required="required"/></label>
             </P><hr/>
-
-            <fieldset class="personalContainer">
+            <div class="personalDet">
+                <div>
+                <fieldset class="personalContainer">
                 <h3 class="applyH3">Personal Details</h3>
-                  <div class="personalDet">
-                    <p class="name">
+                  
+                     <p>  
                     <label  class="applyInput"><input type="text" maxlength="20" pattern="[A-Za-z]{1-20}" placeholder="Please enter your first name" required="required"/> First name&nbsp;&nbsp;&nbsp;</label>
                     <label class="applyInput"><input type="text" maxlength="20"pattern="[A-Za-z]{1-20}"placeholder="Please enter your last name" required="required"/> Last name</label>
                     </p>
-                 </div>
-                 <div>
+                 
+                 
                 <p class="dob">
-                    <label class="applyInput"><input type="date" required="required"/>&nbsp;&nbsp;&nbsp;&nbsp; Date of Birth</label>
+                    <label class="applyInput"><input type="date" required="required"/> Date of Birth</label>
                 </p><hr/>
-                </div>
+                
                 
                 </fieldset><hr/>
+                </div>
+                <div>
                 <fieldset class="applyGender">
                 <h3 class="applyH3">Gender</h3>
                     <p>
@@ -66,7 +69,10 @@
                         <label class="applyInput"><input type="radio" name="gender"/>Female</label>
                         <label class="applyInput"><input type="radio" name="gender"/>Other</label>
                     </p>
-                </fieldset><hr/>
+                </fieldset>
+                </div>
+
+            </div>
                 <fieldset class="applyAddress">
                 <h3 class="applyH3">Address</h3>
         
@@ -111,10 +117,16 @@
                         <textarea class="applyInput" name="skills" placeholder="Write your other skills here"></textarea>
                     </p>
                 </fieldset><hr/>
+                    <div class="FinalApply">
                     <p>
+                    <div>
                         <input class="applyInput" type="submit" value="Submit"/>
+                    </div>
+                    <div>
                         <input class="applyInput" type="reset" value="Reset"/>
+                    </div>
                     </p>
+                    </div>
             </fieldset>        
         </form>
     </section>

@@ -54,6 +54,8 @@
     width: 400px!important;
 
   }
+  
+
 
   
 }
@@ -74,7 +76,36 @@ a {
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .mainForm {
-    width: 500px!important;
+    width: 350px!important;
+  }
+  .personalDet{
+    flex-direction: column!important;
+  }
+  .applyInput{
+    width:max-content!important;
+  }
+  .FinalApply{
+    flex-direction: column!important;
+  }
+  input[type=submit],[type=reset]{
+    width: 300px!important;
+  }
+}
+@media screen and (max-width:700px) and (min-width:400px) {
+  .personalDet{
+    flex-direction: column!important;
+  }
+  .applyInput{
+    width:max-content!important;
+  }
+  .mainForm{
+    width: 300px!important;
+  }
+  .FinalApply{
+    flex-direction: column!important;
+  }
+  input[type=submit],[type=reset]{
+    width: 200px!important;
   }
 }
 
@@ -331,39 +362,49 @@ body{
   flex-direction: column;
   display:flex;
   background-color: white;
-  background-image:linear-gradient(to right, #9cc79c, rgb(198, 214, 204));
+  background-image:linear-gradient(to right, #699b69, rgb(198, 214, 204));
   width: 1000px;
   opacity:0.9;
   justify-content: center;
   align-items: center;
 }
+.mainForm:hover{
+  background-image: linear-gradient(to left, #699b69,rgb(198,214,204));
+}
 .formCard{
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+}
 
 
 
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
   box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.1);
-  width: 220px;
   border-radius: 10px;
   text-align: center;
   border:40px  #0b0000;
   color:aliceblue;
+  transform: scale(1.1);
 }
 .applyH3,.reference{
   border-radius: 30px;
   width: 200px;
   background-color: #639267;
   text-align: center;
+  transition: transform 0.5s ease;
 }
 .personalContainer{
   display:flex;
-  flex-grow: 1;
   flex-direction:column;
   background-color: rgb(255, 255, 255);
+  width: max-content;
+}
+.personalDet{
+  display:flex;
+  flex-direction: row;
+  
 }
 
 .personalContainer,.reference, .applyGender,.applyAddress, .contactInfo,.skills{
@@ -372,9 +413,11 @@ body{
   box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
   
 }
+
 .personalContainer:hover,.reference:hover, .applyGender:hover,.applyAddress:hover, .contactInfo:hover,.skills:hover {
   transform: translate(0,-10%);
 }
+
 fieldset:hover{
   box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
 }
@@ -394,6 +437,14 @@ input[type=submit],[type=reset]{
   border-bottom: 4px double #9ca7a2;
   border-radius:20px ;
 }
+.FinalApply{
+  display: flex;
+  flex-direction: row;
+}
+.reference:hover,.applyInput:hover {
+  box-shadow: 4px 4px 4px #2c442e;
+  background-color: #609966;
+}
 
 fieldset{
   border-top: 3px double black;
@@ -410,19 +461,6 @@ fieldset{
   box-sizing: content-box;
 } 
 
-
-.applyHeadContainer {
- display: flex;
- justify-content: center;
-}
-
-
-
-.reference:hover,.applyInput:hover {
-  transform: translate(0, 5%);
-  box-shadow: 4px 4px 4px #2c442e;
-  background-color: #609966;
-}
 textarea{
   border-radius: 5px;
   border: 2px double black;
