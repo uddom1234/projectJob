@@ -474,7 +474,12 @@ textarea{
 select{
   border-radius: 4px;
   }
+body{
+  font-family: monospace;
+  font-size: large;
+}
 
+/* Box dimensions and details when stable and not hovering over */
 .grow {
   transform: all 1.0 ease-in-out;
   padding: 5px 5px 5px 5px;
@@ -490,6 +495,7 @@ select{
   background-color: #609966;
 }
 
+/* Box dimensions and details when hovering over */
 .grow ul {
   padding: 10px!important;
 }
