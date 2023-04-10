@@ -361,7 +361,7 @@ body{
   display:flex;
   background-color: white;
   background-image:linear-gradient(to right, #699b69, rgb(198, 214, 204));
-  width: 1000px;
+  width: 850px;
   opacity:0.9;
   justify-content: center;
   align-items: center;
@@ -415,7 +415,7 @@ body{
   background-color: rgb(255, 255, 255);
   transition: transform 0.5s ease-in-out ;
   box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
-  
+ 
 }
 /*fieldsets will move upwards and box shadows will appear when hovered over*/
 .personalContainer:hover,.reference:hover, .applyGender:hover,.applyAddress:hover, .contactInfo:hover,.skills:hover {
