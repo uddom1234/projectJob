@@ -73,7 +73,7 @@ a {
   justify-content: space-around;
   flex: 1;
 }
-/*Changing the layout of the form for different screen sizes*/
+
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .mainForm {
     width: 350px!important;
@@ -353,41 +353,32 @@ body{
   background-color: white;
 }
 
-/*adjusting shape and creating a consistent theme of the main form*/
-/*all the contents within the form will be aligned center and in a column*/
+#stateAddress{
+  justify-content: flex-start;
+}
+
 .mainForm{
   border-radius: 1%;
   flex-direction: column;
   display:flex;
   background-color: white;
   background-image:linear-gradient(to right, #699b69, rgb(198, 214, 204));
-  width: 850px;
+  width: 1000px;
   opacity:0.9;
   justify-content: center;
   align-items: center;
-  font-weight: bold ;
 }
-/*changes the direction of the gradient when hovered over*/
 .mainForm:hover{
   background-image: linear-gradient(to left, #699b69,rgb(198,214,204));
 }
-/*contents within the form card will be center aligned and a margin will*/
-/*be applied on top*/
 .formCard{
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
-/*styling the headings*/
-.applyH3,.reference{
-  border-radius: 30px;
-  width: 200px;
-  background-color: #639267;
-  text-align: center;
-  transition: transform 0.5s ease;
-}
-/* text colors, backgorund, border-radius will change in the headings and*/
-/*they will grow and have shadows when hovered over*/
+
+
+
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
   box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.1);
@@ -397,14 +388,19 @@ body{
   color:aliceblue;
   transform: scale(1.1);
 }
-
+.applyH3,.reference{
+  border-radius: 30px;
+  width: 200px;
+  background-color: #639267;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
 .personalContainer{
   display:flex;
   flex-direction:column;
   background-color: rgb(255, 255, 255);
   width: max-content;
 }
-/*two fieldsets will be allocated in a row*/
 .personalDet{
   display:flex;
   flex-direction: row;
@@ -415,19 +411,20 @@ body{
   background-color: rgb(255, 255, 255);
   transition: transform 0.5s ease-in-out ;
   box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
- 
+  
 }
-/*fieldsets will move upwards and box shadows will appear when hovered over*/
+
 .personalContainer:hover,.reference:hover, .applyGender:hover,.applyAddress:hover, .contactInfo:hover,.skills:hover {
   transform: translate(0,-10%);
+}
+
+fieldset:hover{
   box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
 }
-/*input boxes are styles for when they are selected*/
 input[type=text]:focus{
   background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
   border: 4px double black;
 }
-/*styling the submit and reset button*/
 input[type=submit],[type=reset]{
   background-color: #62ab68;
   color:#0b0000 ;
@@ -440,17 +437,15 @@ input[type=submit],[type=reset]{
   border-bottom: 4px double #9ca7a2;
   border-radius:20px ;
 }
-/*parent div for submit and reset buttons, which i wanted to be aligned in a row*/
 .FinalApply{
   display: flex;
   flex-direction: row;
 }
-/*styling each input boxes for when they are hovered over*/
 .reference:hover,.applyInput:hover {
   box-shadow: 4px 4px 4px #2c442e;
   background-color: #609966;
 }
-/*designing the borders of each fieldset*/
+
 fieldset{
   border-top: 3px double black;
   border-left: 3px double black;
@@ -481,7 +476,6 @@ body{
 
 /* Box dimensions and details when stable and not hovering over */
 .grow {
-  transform: all 1.0 ease-in-out;
   padding: 5px 5px 5px 5px;
   border-radius:10px;
   height: 100px; 
@@ -489,30 +483,24 @@ body{
   margin: 8px 1% 5px 1%; 
   float: center; 
   position: relative; 
-  transition:height 10s; 
-  -webkit-transition:height 10s; 
   text-align: center;
   background-color: #609966;
 }
 
 /* Box dimensions and details when hovering over */
-.grow ul {
-  padding: 10px!important;
-}
+.grow {
+  padding: 10px!important;}
 .grow:hover {
     height: auto; /* This is the height on hover */
     transform: all 1.0 ease-in-out;
-}
-
+    transition:height 10s; 
+    -webkit-transition:height 10s; }
 .grow p,
 .grow ul {
-  display: none;
-}
-
+  display: none;}
 .grow:hover p, 
 .grow:hover ul {
-  display: block;
-}
+  display: block;}
 
 /* Enhancement Main Card */
 
