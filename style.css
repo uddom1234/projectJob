@@ -499,6 +499,16 @@ body{
     transform: all 1.0 ease-in-out;
 }
 
+.grow p,
+.grow ul {
+  display: none;
+}
+
+.grow:hover p, 
+.grow:hover ul {
+  display: block;
+}
+
 /* Enhancement Main Card */
 
 #enhancementMainSection {
@@ -575,17 +585,6 @@ form {
   align-items: center;
   justify-content: center;
 }
-
-.grow p,
-.grow ul {
-  display: none;
-}
-
-.grow:hover p, 
-.grow:hover ul {
-  display: block;
-}
-
 
 fieldset{
   width : 90%
