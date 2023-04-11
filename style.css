@@ -488,13 +488,9 @@ body{
 }
 
 /* Box dimensions and details when hovering over */
-.grow {
-  padding: 10px!important;}
 .grow:hover {
     height: auto; /* This is the height on hover */
-    transform: all 1.0 ease-in-out;
-    transition:height 10s; 
-    -webkit-transition:height 10s; }
+    transform: all 1.0s;}
 .grow p,
 .grow ul {
   display: none;}
