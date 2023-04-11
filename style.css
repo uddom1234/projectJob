@@ -474,26 +474,29 @@ body{
   font-size: large;
 }
 
-/* Box dimensions and details when stable and not hovering over */
+/* Provides the row orientation for parent jobs.html */
 .orientation_1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+/* Provides the row orientation for child jobs.html */
 .orientation_2 {
   display: flex;
   flex-direction: row;
 }
-
+/* Provides the column orientation for child jobs.html */
 .orientation_3 {
   display: flex;
   flex-direction: column;
 }
 
+/* gives important background colour for selected flexboxes jobs.html */
 .grow_col {
   background-color: ghostwhite!important;
 }
 
+/* Provides characteristics for all flex boxes jobs.html */
 .grow {
   padding: 5px 5px 5px 5px;
   border-radius:10px;
@@ -502,18 +505,39 @@ body{
   margin: 8px 1% 5px 1%; 
   float: center; 
   position: relative; 
-  text-align: center;
+  text-align: left;
   background-color: #609966;
 }
 
-/* Box dimensions and details when hovering over */
+/* Centers all headings jobs.html */
+.grow h1, 
+.grow h2,
+.grow h3 {
+  text-align: center!important;
+}
+
+/* Gives unordred lists squares jobs.html */
+.grow ul {
+  list-style-type: square;
+}
+
+/* Gives ordered list lower roman numerals jobs.html */
+.grow ol {
+  list-style-type: lower-roman;
+}
+
+/* Box dimensions and details when hovering over jobs.html */
 .grow:hover {
-    height: auto; /* This is the height on hover */
+    height: auto;
     transform: all 1.0s;
     width: 85%;}
+
+/* Hides text when not hoving over jobs.html */
 .grow p,
 .grow ul {
   display: none;} 
+
+/* Displays text when hovering over jobs.html */
 .grow:hover p, 
 .grow:hover ul {
   display: block;}
@@ -706,7 +730,8 @@ ul {
 }
 
 
-/*CSS code for enhancement */ 
+/*CSS code for enhancement */
+/* hides text when not hovering over enhancement.html */
 .en_responsive p,
 .en_hovering p,
 .en_hover p,
@@ -715,7 +740,7 @@ ul {
 .en_ofin img{
   display: none;
 }
-
+/* Displays text and flex box details for responsive when hovering over enhancement.html */
 .en_responsive:hover,
 .en_responsive:hover p{
   margin: 3.5% 3.5%;
@@ -725,7 +750,7 @@ ul {
   transform: all 1.0s;
   text-align: center;
 }
-
+/* Displays text and flex box details for hovering when hovering over enhancement.html */
 .en_hovering:hover,
 .en_hovering:hover p {
   margin: 3.5% 3.5%;
@@ -735,7 +760,7 @@ ul {
   transform: all 1.0s;
   text-align: center;
 }
-
+/* Displays text and flex box details for hover when hovering over enhancement.html */
 .en_hover:hover,
 .en_hover:hover p {
   margin: 3.5% 3.5%;
@@ -746,7 +771,7 @@ ul {
   animation: spin 0.1s linear alternate;
   text-align: center;
 }
-
+/* Spins the flex box and text in hover enhancement.html */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -754,6 +779,7 @@ ul {
   to {
     transform: rotate(360deg);
   }
+/* Displays text and flex box details for cb when hovering over enhancement.html */
 }
 .en_cb_col {color: white;}
 .en_cb:hover,
@@ -766,7 +792,7 @@ ul {
   text-align: center;
   color: white;
 }
-
+/* Displays text and flex box details for of when hovering over enhancement.html */
 .en_ofin:hover,
 .en_ofin:hover p,
 .en_ofin:hover img {
