@@ -502,8 +502,8 @@ body{
 
 #enhancementMainSection {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center!important;
+  justify-content: center!important;
   margin: 5% 40px 5% 40px;
 }
 
@@ -512,13 +512,14 @@ body{
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
-  width: 20rem;
+  width: 30rem;
 }
 
 .enchancementMainCard ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
+  align-items: center!important;
+  text-align: center;
   flex-direction: column;
   justify-content: space-evenly;
   margin-block-start: 0;
@@ -526,7 +527,7 @@ body{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0;
-  height: 20rem
+  height: auto;
 }
 
 .enchancementMainCard li {
@@ -539,6 +540,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5px 5px;
 }
 
 .enchancementMainCard li:hover {
@@ -568,12 +570,7 @@ body{
   transform: translateY(-50%);
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 
 fieldset{
   width : 90%
@@ -685,9 +682,23 @@ ul {
 
 
 /*CSS code for enhancement */ 
+.en_responsive p,
 .en_hovering p,
-.en_hover p {
+.en_hover p,
+.en_cb p,
+.en_ofin p,
+.en_ofin img{
   display: none;
+}
+
+.en_responsive:hover,
+.en_responsive:hover p{
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+  text-align: center;
 }
 
 .en_hovering:hover,
@@ -697,16 +708,18 @@ ul {
   height: auto;
   width: 75%;
   transform: all 1.0s;
+  text-align: center;
 }
 
 .en_hover:hover,
 .en_hover:hover p {
   margin: 3.5% 3.5%;
-  display:block;
+  display: block;
   height: auto;
   width: 75%;
   transform: all 1.0s;
   animation: spin 0.1s linear alternate;
+  text-align: center;
 }
 
 @keyframes spin {
@@ -716,4 +729,26 @@ ul {
   to {
     transform: rotate(360deg);
   }
+}
+.en_cb_col {color: white;}
+.en_cb:hover,
+.en_cb:hover p {
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+  text-align: center;
+  color: white;
+}
+
+.en_ofin:hover,
+.en_ofin:hover p,
+.en_ofin:hover img {
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  align-items: center;
+  text-align: center;
 }
