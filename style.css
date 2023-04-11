@@ -422,7 +422,7 @@ body{
   transform: translate(0,-10%);
   box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
 }
-/*input boxes are styles for when they are selected*/
+/*input boxes are styled for when they are selected*/
 input[type=text]:focus{
   background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
   border: 4px double black;
