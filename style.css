@@ -352,7 +352,7 @@ body{
   font-family: monospace;
   background-color: white;
 }
-
+/*CSS code for application page*/
 #stateAddress{
   justify-content: flex-start;
 }
@@ -787,7 +787,7 @@ ul {
   }
 /* Displays text and flex box details for cb when hovering over enhancement.html */
 }
-.en_cb_col {color: white;}
+.en_cb_col,.en_hover_hide,.en_overlay {color: white;}
 .en_cb:hover,
 .en_cb:hover p {
   margin: 3.5% 3.5%;
