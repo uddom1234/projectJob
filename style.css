@@ -504,7 +504,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin: 5% 40px 5% 40px;
 }
 
 #enhancementBackground {
@@ -681,4 +681,39 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/*CSS code for enhancement */ 
+.en_hovering p,
+.en_hover p {
+  display: none;
+}
+
+.en_hovering:hover,
+.en_hovering:hover p {
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+}
+
+.en_hover:hover,
+.en_hover:hover p {
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+  animation: spin 0.1s linear alternate;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
