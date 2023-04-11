@@ -73,7 +73,7 @@ a {
   justify-content: space-around;
   flex: 1;
 }
-/*Changing the layout of the form for different screen sizes*/
+
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   .mainForm {
     width: 350px!important;
@@ -353,41 +353,33 @@ body{
   background-color: white;
 }
 
-/*adjusting shape and creating a consistent theme of the main form*/
-/*all the contents within the form will be aligned center and in a column*/
+#stateAddress{
+  justify-content: flex-start;
+}
+/* style for the main body of the form*/
 .mainForm{
   border-radius: 1%;
   flex-direction: column;
   display:flex;
   background-color: white;
   background-image:linear-gradient(to right, #699b69, rgb(198, 214, 204));
-  width: 850px;
+  width: 8500px;
   opacity:0.9;
   justify-content: center;
   align-items: center;
-  font-weight: bold ;
 }
-/*changes the direction of the gradient when hovered over*/
+/*changes the direction of the gradient while being hovered over*/
 .mainForm:hover{
   background-image: linear-gradient(to left, #699b69,rgb(198,214,204));
 }
-/*contents within the form card will be center aligned and a margin will*/
-/*be applied on top*/
 .formCard{
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
-/*styling the headings*/
-.applyH3,.reference{
-  border-radius: 30px;
-  width: 200px;
-  background-color: #639267;
-  text-align: center;
-  transition: transform 0.5s ease;
-}
-/* text colors, backgorund, border-radius will change in the headings and*/
-/*they will grow and have shadows when hovered over*/
+
+/*for headings to grow and display shadow while being overed over*/
+
 .applyH3:hover,.reference:hover{
   background-color: #4e6a50;
   box-shadow: 10px 10px 5px 10px rgba(0, 0, 0, 0.1);
@@ -397,14 +389,20 @@ body{
   color:aliceblue;
   transform: scale(1.1);
 }
-
+.applyH3,.reference{
+  border-radius: 30px;
+  width: 200px;
+  background-color: #639267;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
 .personalContainer{
   display:flex;
   flex-direction:column;
   background-color: rgb(255, 255, 255);
   width: max-content;
 }
-/*two fieldsets will be allocated in a row*/
+/*for the containing elements to be aligned in a row*/
 .personalDet{
   display:flex;
   flex-direction: row;
@@ -415,19 +413,22 @@ body{
   background-color: rgb(255, 255, 255);
   transition: transform 0.5s ease-in-out ;
   box-shadow: 5px 10px 40px 5px rgba(184, 184, 184, 0.577) inset ;
- 
+  
 }
-/*fieldsets will move upwards and box shadows will appear when hovered over*/
+/*each class moves upwards when hovered over*/
 .personalContainer:hover,.reference:hover, .applyGender:hover,.applyAddress:hover, .contactInfo:hover,.skills:hover {
   transform: translate(0,-10%);
+}
+/*displays shadow when each fieldset is hovered over*/
+fieldset:hover{
   box-shadow: 30px 30px 10px rgba(0,0,0,0.1);
 }
-/*input boxes are styled for when they are selected*/
+/*input boxes are styles for when they are selected*/
 input[type=text]:focus{
   background-image:linear-gradient(to right, rgba(132, 136, 132, 0.657), white);
   border: 4px double black;
 }
-/*styling the submit and reset button*/
+/*styling of the submit and reset button*/
 input[type=submit],[type=reset]{
   background-color: #62ab68;
   color:#0b0000 ;
@@ -440,17 +441,17 @@ input[type=submit],[type=reset]{
   border-bottom: 4px double #9ca7a2;
   border-radius:20px ;
 }
-/*parent div for submit and reset buttons, which i wanted to be aligned in a row*/
+/*making the submit nd reset button align in a row*/
 .FinalApply{
   display: flex;
   flex-direction: row;
 }
-/*styling each input boxes for when they are hovered over*/
+/*style for when the input boxes are hovered over*/
 .reference:hover,.applyInput:hover {
   box-shadow: 4px 4px 4px #2c442e;
   background-color: #609966;
 }
-/*designing the borders of each fieldset*/
+
 fieldset{
   border-top: 3px double black;
   border-left: 3px double black;
@@ -479,9 +480,30 @@ body{
   font-size: large;
 }
 
-/* Box dimensions and details when stable and not hovering over */
+/* Provides the row orientation for parent jobs.html */
+.orientation_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Provides the row orientation for child jobs.html */
+.orientation_2 {
+  display: flex;
+  flex-direction: row;
+}
+/* Provides the column orientation for child jobs.html */
+.orientation_3 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* gives important background colour for selected flexboxes jobs.html */
+.grow_col {
+  background-color: ghostwhite!important;
+}
+
+/* Provides characteristics for all flex boxes jobs.html */
 .grow {
-  transform: all 1.0 ease-in-out;
   padding: 5px 5px 5px 5px;
   border-radius:10px;
   height: 100px; 
@@ -489,28 +511,50 @@ body{
   margin: 8px 1% 5px 1%; 
   float: center; 
   position: relative; 
-  transition:height 10s; 
-  -webkit-transition:height 10s; 
-  text-align: center;
+  text-align: left;
   background-color: #609966;
 }
 
-/* Box dimensions and details when hovering over */
+/* Centers all headings jobs.html */
+.grow h1, 
+.grow h2,
+.grow h3 {
+  text-align: center!important;
+}
+
+/* Gives unordred lists squares jobs.html */
 .grow ul {
-  padding: 10px!important;
+  list-style-type: square;
 }
+
+/* Gives ordered list lower roman numerals jobs.html */
+.grow ol {
+  list-style-type: lower-roman;
+}
+
+/* Box dimensions and details when hovering over jobs.html */
 .grow:hover {
-    height: auto; /* This is the height on hover */
-    transform: all 1.0 ease-in-out;
-}
+    height: auto;
+    transform: all 1.0s;
+    width: 85%;}
+
+/* Hides text when not hoving over jobs.html */
+.grow p,
+.grow ul {
+  display: none;} 
+
+/* Displays text when hovering over jobs.html */
+.grow:hover p, 
+.grow:hover ul {
+  display: block;}
 
 /* Enhancement Main Card */
 
 #enhancementMainSection {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
+  align-items: center!important;
+  justify-content: center!important;
+  margin: 5% 40px 5% 40px;
 }
 
 #enhancementBackground {
@@ -518,13 +562,14 @@ body{
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
-  width: 20rem;
+  width: 30rem;
 }
 
 .enchancementMainCard ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
+  align-items: center!important;
+  text-align: center;
   flex-direction: column;
   justify-content: space-evenly;
   margin-block-start: 0;
@@ -532,7 +577,7 @@ body{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0;
-  height: 20rem
+  height: auto;
 }
 
 .enchancementMainCard li {
@@ -545,6 +590,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5px 5px;
 }
 
 .enchancementMainCard li:hover {
@@ -580,17 +626,6 @@ form {
   align-items: center;
   justify-content: center;
 }
-
-.grow p,
-.grow ul {
-  display: none;
-}
-
-.grow:hover p, 
-.grow:hover ul {
-  display: block;
-}
-
 
 fieldset{
   width : 90%
@@ -698,4 +733,79 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/*CSS code for enhancement */
+/* hides text when not hovering over enhancement.html */
+.en_responsive p,
+.en_hovering p,
+.en_hover p,
+.en_cb p,
+.en_ofin p,
+.en_ofin img{
+  display: none;
+}
+/* Displays text and flex box details for responsive when hovering over enhancement.html */
+.en_responsive:hover,
+.en_responsive:hover p{
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+  text-align: center;
+}
+/* Displays text and flex box details for hovering when hovering over enhancement.html */
+.en_hovering:hover,
+.en_hovering:hover p {
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+  text-align: center;
+}
+/* Displays text and flex box details for hover when hovering over enhancement.html */
+.en_hover:hover,
+.en_hover:hover p {
+  margin: 3.5% 3.5%;
+  display: block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+  animation: spin 0.1s linear alternate;
+  text-align: center;
+}
+/* Spins the flex box and text in hover enhancement.html */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+/* Displays text and flex box details for cb when hovering over enhancement.html */
+}
+.en_cb_col {color: white;}
+.en_cb:hover,
+.en_cb:hover p {
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  transform: all 1.0s;
+  text-align: center;
+  color: white;
+}
+/* Displays text and flex box details for of when hovering over enhancement.html */
+.en_ofin:hover,
+.en_ofin:hover p,
+.en_ofin:hover img {
+  margin: 3.5% 3.5%;
+  display:block;
+  height: auto;
+  width: 75%;
+  align-items: center;
+  text-align: center;
 }
