@@ -777,6 +777,7 @@ ul {
   animation: spin 0.1s linear alternate;
   text-align: center;
 }
+
 /* Spins the flex box and text in hover enhancement.html */
 @keyframes spin {
   from {
@@ -787,14 +788,14 @@ ul {
   }
 /* Displays text and flex box details for cb when hovering over enhancement.html */
 }
-.en_cb_col,.en_hover_hide,.en_overlay {color: white;}
+.en_cb_col,.en_hover_hide,.en_overlay,.en_hover {color: white;}
 .en_cb:hover,
 .en_cb:hover p {
   margin: 3.5% 3.5%;
   display:block;
   height: auto;
   width: 75%;
-  transform: all 1.0s;
+  transform: all 2.0s;
   text-align: center;
   color: white;
 }
@@ -808,4 +809,22 @@ ul {
   width: 75%;
   align-items: center;
   text-align: center;
+}
+/* displays the text on the image of 
+overlay feature*/
+.enhancement_image {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(96, 153, 102, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* display the overlay when hovered */
+.en_ofin:hover .enhancement_image {
+  opacity: 0.6;
 }
