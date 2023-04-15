@@ -363,7 +363,7 @@ body{
   display:flex;
   background-color: white;
   background-image:linear-gradient(to right, #699b69, rgb(198, 214, 204));
-  width: 8500px;
+  width: 850px;
   opacity:0.9;
   justify-content: center;
   align-items: center;
