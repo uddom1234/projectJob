@@ -387,7 +387,7 @@ body{
   text-align: center;
   border:40px  #0b0000;
   color:aliceblue;
-  transform: scale(1.1);
+  transform: scale(1.1);/*headings scale up when hovered over*/
 }
 .applyH3,.reference{
   border-radius: 30px;
