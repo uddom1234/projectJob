@@ -491,11 +491,14 @@ body{
 .orientation_2 {
   display: flex;
   flex-direction: row;
+  width: 65%!important; 
+  justify-content: center;
 }
 /* Provides the column orientation for child jobs.html */
 .orientation_3 {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  width: 65%!important;
 }
 
 /* gives important background colour for selected flexboxes jobs.html */
@@ -508,7 +511,6 @@ body{
   padding: 5px 5px 5px 5px;
   border-radius:10px;
   height: 100px; 
-  width: 85%; 
   margin: 8px 1% 5px 1%; 
   float: center; 
   position: relative; 
@@ -536,8 +538,7 @@ body{
 /* Box dimensions and details when hovering over jobs.html */
 .grow:hover {
     height: auto;
-    transform: all 1.0s;
-    width: 85%;}
+    transform: all 1.0s;}
 
 /* Hides text when not hoving over jobs.html */
 .grow p,
