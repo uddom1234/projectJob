@@ -593,6 +593,7 @@ body{
   justify-content: center;
   align-items: center;
   margin: 5px 5px;
+  width: 50%;
 }
 
 .enchancementMainCard li:hover {
@@ -748,33 +749,24 @@ ul {
 .en_ofin img{
   display: none;
 }
-/* Displays text and flex box details for responsive when hovering over enhancement.html */
+/* Displays text and flex box details for responsive and hover gide in grow when hovering over enhancement.html */
 .en_responsive:hover,
-.en_responsive:hover p{
-  margin: 3.5% 3.5%;
-  display:block;
-  height: auto;
-  width: 75%;
-  transform: all 1.0s;
-  text-align: center;
-}
-/* Displays text and flex box details for hovering when hovering over enhancement.html */
+.en_responsive:hover p,
 .en_hovering:hover,
-.en_hovering:hover p {
+.en_hovering:hover p{
   margin: 3.5% 3.5%;
   display:block;
   height: auto;
-  width: 75%;
   transform: all 1.0s;
   text-align: center;
 }
-/* Displays text and flex box details for hover when hovering over enhancement.html */
+
+/* Displays text and flex box details for responsive and hover in grow when hovering over enhancement.html */
 .en_hover:hover,
 .en_hover:hover p {
   margin: 3.5% 3.5%;
   display: block;
   height: auto;
-  width: 75%;
   transform: all 1.0s;
   animation: rotate 0.1s linear alternate;
   text-align: center;
@@ -792,7 +784,6 @@ ul {
   margin: 3.5% 3.5%;
   display:block;
   height: auto;
-  width: 75%;
   transform: all 2.0s;
   text-align: center;
   color: white;
