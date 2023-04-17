@@ -278,6 +278,7 @@ this is decorating and adjust the texts to the right place */
 .mainCardSplit img {
   width: 35%;
   height: auto;
+  align-self: center;
 }
 
 /* adding margins and making the display flex for the section */
@@ -490,11 +491,14 @@ body{
 .orientation_2 {
   display: flex;
   flex-direction: row;
+  width: 65%!important; 
+  justify-content: center;
 }
 /* Provides the column orientation for child jobs.html */
 .orientation_3 {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  width: 65%!important;
 }
 
 /* gives important background colour for selected flexboxes jobs.html */
@@ -507,7 +511,6 @@ body{
   padding: 5px 5px 5px 5px;
   border-radius:10px;
   height: 100px; 
-  width: 85%; 
   margin: 8px 1% 5px 1%; 
   float: center; 
   position: relative; 
@@ -535,8 +538,7 @@ body{
 /* Box dimensions and details when hovering over jobs.html */
 .grow:hover {
     height: auto;
-    transform: all 1.0s;
-    width: 85%;}
+    transform: all 1.0s;}
 
 /* Hides text when not hoving over jobs.html */
 .grow p,
@@ -591,6 +593,7 @@ body{
   justify-content: center;
   align-items: center;
   margin: 5px 5px;
+  width: 50%;
 }
 
 .enchancementMainCard li:hover {
@@ -748,7 +751,7 @@ ul {
   margin:0!important;
 
 }
-/* Displays text and flex box details for responsive when hovering over enhancement.html */
+/* Displays text and flex box details for responsive and hover gide in grow when hovering over enhancement.html */
 .en_responsive:hover,
 .en_responsive:hover p{
   margin:0!important;
@@ -761,33 +764,30 @@ ul {
   flex-direction: column ;
 }
 /* Displays text and flex box details for hovering when hovering over enhancement.html */
+.en_responsive:hover p,
 .en_hovering:hover,
-.en_hovering:hover p {
+.en_hovering:hover p{
+  margin: 3.5% 3.5%;
   display:block;
   height: auto;
-  width: 75%;
   transform: all 1.0s;
   text-align: center;
 }
-/* Displays text and flex box details for hover when hovering over enhancement.html */
+
+/* Displays text and flex box details for responsive and hover in grow when hovering over enhancement.html */
 .en_hover:hover,
 .en_hover:hover p {
   display: block;
   height: auto;
-  width: 75%;
   transform: all 1.0s;
-  animation: spin 0.1s linear alternate;
+  animation: rotate 0.1s linear alternate;
   text-align: center;
 }
 
 /* Spins the flex box and text in hover enhancement.html */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 /* Displays text and flex box details for cb when hovering over enhancement.html */
 }
 .en_cb_col,.en_hover_hide,.en_overlay,.en_hover {color: white;}
@@ -795,7 +795,6 @@ ul {
 .en_cb:hover p {
   display:block;
   height: auto;
-  width: 75%;
   transform: all 2.0s;
   text-align: center;
   color: white;
@@ -822,10 +821,10 @@ overlay feature*/
   background-color: rgba(96, 153, 102, 0.8);
   color: #fff;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.2s ease;
 }
 
 /* display the overlay when hovered */
 .en_ofin:hover .enhancement_image {
-  opacity: 0.6;
+  opacity: 5;
 }
