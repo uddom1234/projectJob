@@ -745,21 +745,24 @@ ul {
 .en_ofin p,
 .en_ofin img{
   display: none;
+  margin:0!important;
+
 }
 /* Displays text and flex box details for responsive when hovering over enhancement.html */
 .en_responsive:hover,
 .en_responsive:hover p{
-  margin: 3.5% 3.5%;
-  display:block;
+  margin:0!important;
+  display:flex;
   height: auto;
   width: 75%;
   transform: all 1.0s;
   text-align: center;
+  align-items: center;
+  flex-direction: column ;
 }
 /* Displays text and flex box details for hovering when hovering over enhancement.html */
 .en_hovering:hover,
 .en_hovering:hover p {
-  margin: 3.5% 3.5%;
   display:block;
   height: auto;
   width: 75%;
@@ -769,7 +772,6 @@ ul {
 /* Displays text and flex box details for hover when hovering over enhancement.html */
 .en_hover:hover,
 .en_hover:hover p {
-  margin: 3.5% 3.5%;
   display: block;
   height: auto;
   width: 75%;
@@ -791,7 +793,6 @@ ul {
 .en_cb_col,.en_hover_hide,.en_overlay,.en_hover {color: white;}
 .en_cb:hover,
 .en_cb:hover p {
-  margin: 3.5% 3.5%;
   display:block;
   height: auto;
   width: 75%;
