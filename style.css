@@ -776,18 +776,14 @@ ul {
   height: auto;
   width: 75%;
   transform: all 1.0s;
-  animation: spin 0.1s linear alternate;
+  animation: rotate 0.1s linear alternate;
   text-align: center;
 }
 
 /* Spins the flex box and text in hover enhancement.html */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 /* Displays text and flex box details for cb when hovering over enhancement.html */
 }
 .en_cb_col,.en_hover_hide,.en_overlay,.en_hover {color: white;}
