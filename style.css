@@ -757,7 +757,6 @@ ul {
   margin:0!important;
   display:flex;
   height: auto;
-  width: 75%;
   transform: all 1.0s;
   text-align: center;
   align-items: center;
@@ -803,10 +802,8 @@ ul {
 .en_ofin:hover,
 .en_ofin:hover p,
 .en_ofin:hover img {
-  margin: 3.5% 3.5%;
   display:block;
   height: auto;
-  width: 75%;
   align-items: center;
   text-align: center;
 }
