@@ -821,10 +821,10 @@ overlay feature*/
   background-color: rgba(96, 153, 102, 0.8);
   color: #fff;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.2s ease;
 }
 
 /* display the overlay when hovered */
 .en_ofin:hover .enhancement_image {
-  opacity: 0.6;
+  opacity: 5;
 }
