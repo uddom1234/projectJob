@@ -278,6 +278,7 @@ this is decorating and adjust the texts to the right place */
 .mainCardSplit img {
   width: 35%;
   height: auto;
+  align-self: center;
 }
 
 /* adding margins and making the display flex for the section */
